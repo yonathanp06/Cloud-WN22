@@ -13,13 +13,14 @@ jobs:
     steps:
     - name: Mendownload Ngrok.
       run: |
+        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok-stable-windows-amd64.zip
         Invoke-WebRequest https://raw.githubusercontent.com/AnshGautam112233/Cloud-WN22/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/AnshGautam112233/Cloud-WN22/main/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/AnshGautam112233/Cloud-WN22/main/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/AnshGautam112233/Cloud-WN22/main/loop.bat -OutFile loop.bat
    
     - name: Mengextract Ngrok File.
-      run: Expand-Archive ngrok.zip
+      run: Expand-Archive ngrok-stable-windows-amd64.zip
     - name: Connect Ke Akun Ngrok.
       run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
