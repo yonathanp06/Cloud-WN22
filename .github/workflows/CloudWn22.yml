@@ -17,9 +17,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/AnshGautam112233/Cloud-WN22/main/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/AnshGautam112233/Cloud-WN22/main/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/AnshGautam112233/Cloud-WN22/main/loop.bat -OutFile loop.bat
-    - name: Mendownload Launcher.
-      run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/AnshGautam112233/Cloud-WN22/raw/main/Node.js.lnk -OutFile Node.js.lnk
+   
     - name: Mengextract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ke Akun Ngrok.
