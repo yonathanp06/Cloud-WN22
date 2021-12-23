@@ -24,7 +24,7 @@ jobs:
     - name: Mengextract Ngrok File.
       run: Expand-Archive ngrok-stable-windows-amd64.zip
     - name: Connect Ke Akun Ngrok.
-      run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
+      run: .\ngrok-stable-windows-amd64\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
     - name: Mengaktifkan Akses RDP.
