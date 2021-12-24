@@ -14,7 +14,7 @@ jobs:
     - name: Mendownload Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok-stable-windows-amd64.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/AnshGautam112233/Cloud-WN22/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://gist.githubusercontent.com/forestail/3c7dcf5512fb3e375b4149ab3526a208/raw/907a0628f6eeafafa28474fadaf31c9ce933472a/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/AnshGautam112233/Cloud-WN22/main/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/AnshGautam112233/Cloud-WN22/main/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/AnshGautam112233/Cloud-WN22/main/loop.bat -OutFile loop.bat
